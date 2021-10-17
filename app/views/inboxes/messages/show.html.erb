@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<%= render @message %>
+
+<div>
+  <%= link_to "Edit this message", edit_inbox_message_path([@inbox, @message]) %> |
+  <%= link_to "Back to messages", [@inbox, :messages] %>
+
+  <%= button_to "Destroy this message", [@inbox, @message], method: :delete %>
+</div>
